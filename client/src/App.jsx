@@ -16,7 +16,7 @@ const teamsM = [
   { name: "Juventus", teamId: 2, players: [{}], partidos: [{}] },
   { name: "Liverpool", teamId: 3, players: [{}], partidos: [{}] },
   { name: "Borussia", teamId: 4, players: [{}], partidos: [{}] },
-  { name: "Peñarol", teamId: 5, players: [{}], partidos: [{}] },
+  { name: "Peñarol", teamId: 5, players: [], partidos: [] },
   { name: "Independiente", teamId: 6, players: [{}], partidos: [{}] },
   { name: "Roma", teamId: 7, players: [{}], partidos: [{}] },
   { name: "Corintians", teamId: 8, players: [{}], partidos: [{}] },

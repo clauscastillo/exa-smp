@@ -1,5 +1,5 @@
 const Team = require("../models/team.model");
-const User = require("../models/users.model");
+const User = require("../models/user.model");
 const SECRET = process.env.KEYJWT;
 
 const getTeams = async (req, res) => {

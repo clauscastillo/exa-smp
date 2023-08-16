@@ -1,10 +1,10 @@
 const mongoose = require("mongoose");
 mongoose.set("strictQuery", true);
-const User = require("../models/users.model");
+const User = require("../models/user.model");
 
 mongoose
   .connect(
-    "mongodb+srv://admin:i98YpsTvOt8Bzqaz@cluster0.q9towfu.mongodb.net/  ",
+    "mongodb+srv://admin:BOmxV7UwAfnbmvRO@cluster0.q9towfu.mongodb.net/  ",
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,

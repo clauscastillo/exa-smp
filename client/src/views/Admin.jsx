@@ -5,27 +5,31 @@ const Admin = () => {
   const [form, setForm] = useState({
     name: "",
     teamId: 1,
-    number: "",
+    number: 1,
   });
 
   const handleForm = (e) => {
     console.log(e.target.value);
+
     setForm({
       ...form,
       [e.target.id]: e.target.value,
     });
-    e.target.id === "number" &&
-      setForm({
-        ...form,
-        [e.target.id]: Number(e.target.value),
-      });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    const formToSend = {
+      name: form.name,
+      teamId: Number(form.teamId),
+      number: Number(form.number),
+    };
+
+    console.log(formToSend);
     axios
-      .put("http://localhost:8000/api/addplayer/" + form.teamId, form)
-      .then((res) => console.log(res))
+      .post("http://localhost:8000/api/player/", formToSend)
+      .then((res) => console.log(res.data))
       .catch((err) => console.log(err));
   };
   return (
@@ -74,19 +78,25 @@ const Admin = () => {
           <option value="" disabled selected>
             Seleccione un equipo
           </option>
-          <option value="1">Man City</option>
-          <option value="2">Juventus</option>
-          <option value="3">Liverpool</option>
-          <option value="4">Borussia</option>
-          <option value="5">Peñarol</option>
-          <option value="6">Independiente</option>
-          <option value="7">Roma</option>
-          <option value="8">Corintians</option>
-          <option value="9">Atl. Nacional</option>
-          <option value="10">Chelsea</option>
-          <option value="11">Boca</option>
-          <option value="12">River Plate</option>
-          <option value="13">Atlanta</option>
+          <option value={1}>Man City</option>
+          <option value={2}>Juventus</option>
+          <option value={3}>Liverpool</option>
+          <option value={4}>Borussia</option>
+          <option value={5}>Peñarol</option>
+          <option value={6}>Independiente</option>
+          <option value={7}>Roma</option>
+          <option value={8}>Corintians</option>
+          <option value={9}>Atl. Nacional</option>
+          <option value={10}>Chelsea</option>
+          <option value={11}>Boca</option>
+          <option value={12}>River Plate</option>
+          <option value={13}>Atlanta</option>
+          <option value={14}>Man City</option>
+          <option value={15}>Borussia</option>
+          <option value={16}>Atl. Nacional</option>
+          <option value={17}>Independiente</option>
+          <option value={18}>Liverpool</option>
+          <option value={19}>Atlanta</option>
         </select>
 
         <label htmlFor="number">Número:</label>
@@ -94,8 +104,6 @@ const Admin = () => {
           type="number"
           id="number"
           name="number"
-          min={1}
-          max={19}
           required
           value={form.number}
           onChange={handleForm}

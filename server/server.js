@@ -26,8 +26,11 @@ require("./config/mongoose.config");
 
 // Rutas
 
-const ServiceRoutes = require("./routes/teams.routes");
-ServiceRoutes(app);
+const TeamsRoutes = require("./routes/teams.routes");
+TeamsRoutes(app);
+
+const PlayerRoutes = require("./routes/player.routes");
+PlayerRoutes(app);
 
 // const UserRoutes = require("./routes/user.routes");
 // UserRoutes(app);
