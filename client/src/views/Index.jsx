@@ -2,7 +2,7 @@ import { useState } from "react";
 import Section from "../components/Section";
 import viteLogo from "/vite.svg";
 
-const Index = ({ toggle }) => {
+const Index = () => {
   const [alternate, setAlternate] = useState(true);
 
   return (
@@ -131,14 +131,14 @@ const Index = ({ toggle }) => {
               </div>
               <div className="vs">
                 <p className="text-left">
-                  Peñarol{" "}
+                  Peñarol
                   <img
                     src="https://i.ibb.co/LxGFGvg/pe-orol-men.png"
                     alt="pe-orol-men"
                     border="0"
                     className="img-left"
                   />
-                </p>{" "}
+                </p>
                 <span>22:00</span>
                 <p>
                   <img
@@ -156,15 +156,15 @@ const Index = ({ toggle }) => {
               <hr />
               <div className="vs">
                 <p className="text-left">
-                  Liverpool{" "}
+                  Liverpool
                   <img
                     src="https://i.ibb.co/hMJ5jck/liverpool-men.png"
                     alt="liverpool-men"
                     border="0"
                     className="img-left"
                   />
-                </p>{" "}
-                <span>18:30</span>{" "}
+                </p>
+                <span>18:30</span>
                 <p>
                   <img
                     src="https://i.ibb.co/2dtQPdT/atlanta-fem.png"
@@ -176,7 +176,7 @@ const Index = ({ toggle }) => {
               </div>
               <div className="vs">
                 <p className="text-left">
-                  Borussia{" "}
+                  Borussia
                   <img
                     src="https://i.ibb.co/n1GMLtq/borussia-men.png"
                     alt="borussia-men"
@@ -184,7 +184,7 @@ const Index = ({ toggle }) => {
                     className="img-left"
                   />
                 </p>{" "}
-                <span>19:30</span>{" "}
+                <span>19:30</span>
                 <p>
                   <img
                     src="https://i.ibb.co/pJNZksN/Indep-men.png"
