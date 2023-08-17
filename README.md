@@ -9,7 +9,5 @@ Currently, two official plugins are available:
 
 ## Planificación de características
 
-[] Registro de jugadores
-[] Registro de equipos
-[] Listado de partidos
-[]
+Tabla de posiciones, actualizar equipos para que tengan las stats adecuadas en la tabla
+ordenar por
