@@ -28,7 +28,7 @@ const Admin = () => {
 
     console.log(formToSend);
     axios
-      .post("http://localhost:8000/api/player/", formToSend)
+      .post("http://127.1.1.0:8000/api/player/", formToSend)
       .then((res) => console.log(res.data))
       .catch((err) => console.log(err));
   };

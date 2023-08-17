@@ -1,6 +1,4 @@
 import { useState } from "react";
-import Section from "../components/Section";
-import viteLogo from "/vite.svg";
 
 const Index = () => {
   const [alternate, setAlternate] = useState(true);
@@ -115,7 +113,6 @@ const Index = () => {
                     className="img-left"
                     src="https://i.ibb.co/ZGZHT40/a-nacional-men.png"
                     alt=""
-                    className="img-left"
                   />
                 </p>{" "}
                 <span>21:30</span>{" "}
