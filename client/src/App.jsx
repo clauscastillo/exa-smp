@@ -15,7 +15,7 @@ function App() {
 
   useEffect(() => {
     axios
-      .get("http://127.1.1.0:8000/api/teams")
+      .get("http://localhost:8000/api/teams")
       .then((res) => setTeams(res.data));
   }, []);
 
