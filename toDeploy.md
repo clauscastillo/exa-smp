@@ -16,7 +16,7 @@ $ nodejs -v
 $ sudo apt install build-essential
 $ git clone https://github.com/your_github_username/MERN-deployment.git
 $ sudo rm -rf /var/www/html
-$ sudo mv build /var/www/html
+$ sudo mv dist /var/www/html
 $ sudo service nginx restart
 $ sudo grep -rl localhost /var/www/html | xargs sed -i 's/http:\/\/localhost:8000//g'
 $ wget -qO - https://www.mongodb.org/static/pgp/server-4.2.asc | sudo apt-key add -
