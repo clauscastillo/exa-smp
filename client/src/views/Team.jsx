@@ -11,7 +11,7 @@ const Team = ({ teams }) => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8000/api/playersForTeam/" + params.id)
+      .get("http://127.1.1.0:8000/api/playersForTeam/" + params.id)
       .then((res) => setPlayers(res.data))
       .catch((err) => console.log(err));
 
