@@ -56,15 +56,6 @@ const Header = ({ setToggle, toggle }) => {
         </NavLink>
         <hr />
         <NavLink
-          to={"/ranking"}
-          className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "selected" : "not-selected"
-          }
-        >
-          Ranking
-        </NavLink>
-        <hr />
-        <NavLink
           to={"/comunidad"}
           className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "selected" : "not-selected"

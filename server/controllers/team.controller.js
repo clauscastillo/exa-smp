@@ -31,34 +31,11 @@ const addTeam = (req, res) => {
     .catch((err) => res.json(err));
 };
 
-const editService = (req, res) => {
-  console.log(req.params.id);
-  if (req.body.key == "description") {
-    Service.findByIdAndUpdate(req.params.id, {
-      $set: { description: req.body.description },
-    }).then((response) => res.json(response));
-  } else {
-    Service.findByIdAndUpdate(req.params.id, {
-      $set: { status: req.body.status },
-    }).then((response) => res.json(response));
-  }
-};
-
-const deleteService = (req, res) => {
-  Service.findByIdAndDelete(req.params.id)
-    .then(res.json("Deleted Correctly"))
-    .catch((err) => res.json("No Deleted" + err));
-};
-
-const getAllServices = (req, res) => {
-  const token = req.headers.user;
-  const user = jwt.verify(token, SECRET);
-  User.findById(user._id).then((response) => {
-    if (response.admin == true) {
-      Service.find().then((respon) => res.json(respon));
-    } else {
-      res.status(401).json({ error: "No estas autorizado" });
-    }
+const addTeams = (req, res) => {
+  req.body.map((team) => {
+    Team.create(team)
+      .then((response) => console.log(response))
+      .catch((err) => console.log(err));
   });
 };
 
@@ -66,7 +43,5 @@ module.exports = {
   getTeams,
   addTeam,
   addPlayer,
-  editService,
-  deleteService,
-  getAllServices,
+  addTeams,
 };

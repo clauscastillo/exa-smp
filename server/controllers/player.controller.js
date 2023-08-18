@@ -13,6 +13,12 @@ const getPlayer = (req, res) => {
     .catch((err) => res.json(err));
 };
 
+const getPlayersForTeam = (req, res) => {
+  Player.find({ teamId: req.params.id })
+    .then((response) => res.json(response))
+    .catch((err) => console.log(err));
+};
+
 const addPlayer = (req, res) => {
   Player.create(req.body)
     .then((response) => {
@@ -27,8 +33,22 @@ const addPlayer = (req, res) => {
     .catch((err) => res.json(err));
 };
 
+const addPlayers = async (req, res) => {
+  try {
+    for (const playerdata of req.body) {
+      const player = new Player(playerdata);
+      await player.save();
+      console.log(`Jugador "${player.name}" agregado a MongoDB.`);
+    }
+  } catch (error) {
+    console.error("Error al agregar jugadores:", error);
+  }
+};
+
 module.exports = {
   getPlayers,
   getPlayer,
   addPlayer,
+  getPlayersForTeam,
+  addPlayers,
 };

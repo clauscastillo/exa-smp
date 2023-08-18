@@ -2,9 +2,7 @@ const {
   addTeam,
   getTeams,
   addPlayer,
-  editService,
-  deleteService,
-  getAllServices,
+  addTeams,
 } = require("../controllers/team.controller");
 
 module.exports = (app) => {
@@ -12,11 +10,7 @@ module.exports = (app) => {
 
   app.post("/api/team", addTeam);
 
+  app.post("/api/teams", addTeams);
+
   app.put("/api/addplayer/:id", addPlayer);
-
-  app.put("/api/editservice/:id", editService);
-
-  app.delete("/api/service/:id", deleteService);
-
-  app.get("/api/internal/services", getAllServices);
 };

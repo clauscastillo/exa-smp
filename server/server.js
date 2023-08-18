@@ -12,7 +12,7 @@ app.listen(port, () => {
 // Configuracion para peticiones cruzadas y lectura de POST
 app.use(
   cors({
-    origin: "https://exasmp.site",
+    origin: "http://localhost:5173",
     credentials: true,
   })
 );

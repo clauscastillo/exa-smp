@@ -18,6 +18,13 @@ const TeamSchema = mongoose.Schema(
       type: Array,
       default: [],
     },
+    shieldUrl: {
+      type: String,
+    },
+    games: {
+      type: Array,
+      default: [],
+    },
   },
   { timestamps: true }
 );

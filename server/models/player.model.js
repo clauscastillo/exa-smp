@@ -5,6 +5,7 @@ const PlayerSchema = mongoose.Schema(
     name: {
       type: String,
       required: [true, "client is required"],
+      unique: true,
     },
     number: {
       type: Number,

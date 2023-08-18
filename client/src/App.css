@@ -22,7 +22,7 @@
 
 
 h1 {
-  font-weight: 800;
+  font-family: "heavy";
 }
 img {
   max-height: 100%;
@@ -48,6 +48,7 @@ header {
   color: white;
 
 }
+
 
 
 
@@ -113,6 +114,7 @@ main section:first-child {
 .selected {
   font-size: 1.2rem;
   font-weight: 400;
+  font-family: 'bold';
   color: white;
   background: linear-gradient(45deg, #2AC2FF, #7e59ff);
   border-radius: 10px;
@@ -124,6 +126,7 @@ main section:first-child {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: 'bold';
   font-size: 1.2rem;
   font-weight: 400;
   color: #37003C;
@@ -255,9 +258,106 @@ justify-content: end;
   margin: 0 auto
 }
 
+table {
+  margin: 0 auto;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+th, td {
+  border-width: 1px 0px 1px 0px;
+  padding: 10px;
+}
+
+.table-pts {
+  font-family: 'Heavy';
+}
+
+.table-title {
+  color: white;
+  font-family: 'heavy';
+  font-size: 1.2rem;
+  padding: 5px 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.td-center {
+  text-align: center;
+}
+
+td img {
+  height: 20px;
+}
 
 
+.team {
+  background-color: #70007a ;
+  border-radius: 10px;
+  color: white;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 50%;
+  margin: 0 auto;
+  font-size: 1.3rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.team p {
+  font-family: "bold";
+}
+
+.team-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center ;
+  justify-content: center;
+}
+
+.players {
+  padding: 20px;
+}
+
+.list {
+  list-style: none;
+}
+
+.title-players {
+  font-family: "heavy";
+  color: #37003C;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+.player-list {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+.player-list p:first-child {
+  width: 30px;
+}
+
+.div-players {
+  width: 100%;
+}
+
+.select {
+  display: flex;
+  margin: 20px auto;
+  width: 80%;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
 
 
-
+.select-hide {
+  display: none;
+}
 
