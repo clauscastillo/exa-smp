@@ -38,7 +38,7 @@ const Ranking = ({ teams }) => {
               return (
                 <tr key={team.teamId}>
                   <td className="td-center">0</td>
-                  <td>
+                  <td className="center">
                     <img src={team.shieldUrl} alt="" />
                     {team.name}
                   </td>
