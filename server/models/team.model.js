@@ -21,9 +21,11 @@ const TeamSchema = mongoose.Schema(
     shieldUrl: {
       type: String,
     },
-    games: {
+    stats: {
       type: Array,
-      default: [],
+    },
+    group: {
+      type: String,
     },
   },
   { timestamps: true }

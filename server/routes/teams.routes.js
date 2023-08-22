@@ -3,6 +3,7 @@ const {
   getTeams,
   addPlayer,
   addTeams,
+  editStats,
 } = require("../controllers/team.controller");
 
 module.exports = (app) => {
@@ -13,4 +14,6 @@ module.exports = (app) => {
   app.post("/api/teams", addTeams);
 
   app.put("/api/addplayer/:id", addPlayer);
+
+  app.put("/api/editteam", editStats);
 };

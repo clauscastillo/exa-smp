@@ -38,6 +38,7 @@ const Team = ({ teams }) => {
               return (
                 <>
                   <li key={player._id} className="player-list">
+                    <img src="../assets/players/jugador.jfif" alt="" />
                     <p>{player.number}</p>
                     <p>{player.name}</p>
                   </li>

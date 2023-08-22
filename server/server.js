@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const port = process.env.PORT || 8000;
 const cors = require("cors");
+const Player = require("./models/player.model");
 
 // Iniciar server
 
@@ -12,7 +13,8 @@ app.listen(port, () => {
 // Configuracion para peticiones cruzadas y lectura de POST
 app.use(
   cors({
-    origin: "https://exasmp.site",
+    origin: "http://localhost:5173",
+    // origin: "https://exasmp.site",
     credentials: true,
   })
 );

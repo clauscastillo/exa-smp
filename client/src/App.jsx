@@ -14,9 +14,10 @@ function App() {
   const [teams, setTeams] = useState([]);
 
   useEffect(() => {
-    axios
-      .get("http://localhost:8000/api/teams")
-      .then((res) => setTeams(res.data));
+    axios.get("http://localhost:8000/api/teams").then((res) => {
+      setTeams(res.data);
+      console.log(res.data);
+    });
   }, []);
 
   return (
@@ -24,7 +25,7 @@ function App() {
       <BrowserRouter>
         <Header toggle={toggle} setToggle={setToggle} />
         <Routes>
-          <Route path="/" element={<Index />}></Route>
+          <Route path="/" element={<Index teams={teams} />}></Route>
           <Route path="/admin731649" element={<Admin />}></Route>
           <Route path="/equipos" element={<Teams teams={teams} />}></Route>
           <Route path="/equipos/:id" element={<Team teams={teams} />}></Route>

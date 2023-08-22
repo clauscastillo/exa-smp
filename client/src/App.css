@@ -171,6 +171,7 @@ main section:first-child {
 
 
 .masculino {
+  font-size: 26px;
   background-image: url("/fondo-masc.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -179,6 +180,7 @@ main section:first-child {
 }
 
 .femenino {
+  font-size: 26px;
   background-image: url("/fondo-fem.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -198,7 +200,7 @@ main section:first-child {
 .vs > span {
   display: flex;
   width: 50px;
-  font-family: 'regular';
+  font-family: 'bold';
   font-weight: 400;
   font-size: 16px;
   border: rgb(209, 209, 209) solid 1px;
@@ -372,4 +374,18 @@ td img {
   display: flex;
   align-items: center;
   gap: 5px;
+}
+
+.games {
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+.group {
+  text-align: center;
+  margin: 0 auto;
+  background-color: #082B2F;
+  color: white;
+  font-family: "bold";
 }
