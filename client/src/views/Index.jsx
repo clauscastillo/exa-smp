@@ -1,6 +1,17 @@
 import { useState } from "react";
 
 const Index = ({ teams }) => {
+  function games(fecha, ordenM, orderF, hourM, hourF, teams) {
+    const gamesGroupA = teams
+      .filter((team) => team.group === "A")
+      .sort((a, b) => ordenM.indexOf(a.teamId) - ordenM.indexOf(b.teamId));
+
+    for (let i = 0; i < orden.length; i += 2) {
+      const enfrentamiento = [orderTeamsFecha2M[i], orderTeamsFecha2M[i + 1]];
+      fecha2M.push(enfrentamiento);
+    }
+  }
+
   const [alternate, setAlternate] = useState(true);
 
   const OrderNumbersM = [11, 2, 3, 10, 13, 1, 6, 8, 9, 7, 5, 4];

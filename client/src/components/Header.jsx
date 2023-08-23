@@ -12,9 +12,9 @@ const Header = ({ setToggle, toggle }) => {
   return (
     <>
       <header>
-        <div className="bg-logo">
+        <Link to={"/"} className="bg-logo">
           <img className="logo" src="/logo.png" alt="" />
-        </div>
+        </Link>
         <h1>Exa SMP</h1>
         {toggle ? (
           <MdClose
@@ -28,6 +28,7 @@ const Header = ({ setToggle, toggle }) => {
       </header>
       <aside className={toggle ? "menu show" : "menu"}>
         <NavLink
+          onClick={handleToggle}
           to={"/"}
           className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "selected" : "not-selected"
@@ -37,6 +38,7 @@ const Header = ({ setToggle, toggle }) => {
         </NavLink>
         <hr />
         <NavLink
+          onClick={handleToggle}
           to={"/equipos"}
           className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "selected" : "not-selected"
@@ -47,6 +49,7 @@ const Header = ({ setToggle, toggle }) => {
 
         <hr />
         <NavLink
+          onClick={handleToggle}
           to={"/clasificacion"}
           className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "selected" : "not-selected"
@@ -56,6 +59,7 @@ const Header = ({ setToggle, toggle }) => {
         </NavLink>
         <hr />
         <NavLink
+          onClick={handleToggle}
           to={"/comunidad"}
           className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "selected" : "not-selected"
