@@ -144,7 +144,7 @@ main section:first-child {
 }
 
 .fechas-header {
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
   background-image: url(https://www.premierleague.com/resources/rebrand/v7.124.6/i/elements/backgrounds/sm-header-pattern.svg);
   background-size: cover;
@@ -365,11 +365,6 @@ td img {
 
 
 
-
-
-
-
-
 .center {
   display: flex;
   align-items: center;
@@ -388,4 +383,15 @@ td img {
   background-color: #082B2F;
   color: white;
   font-family: "bold";
+}
+
+.fechas {
+  border: 1px solid rgb(217, 217, 217);
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.fechas > p {
+  font-family: 'bold';
+  font-size: 1.3rem;
 }

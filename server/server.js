@@ -13,8 +13,8 @@ app.listen(port, () => {
 // Configuracion para peticiones cruzadas y lectura de POST
 app.use(
   cors({
-    origin: "http://localhost:5173",
-    // origin: "https://exasmp.site",
+    // origin: "http://localhost:5173",
+    origin: "https://exasmp.site",
     credentials: true,
   })
 );
@@ -33,6 +33,9 @@ TeamsRoutes(app);
 
 const PlayerRoutes = require("./routes/player.routes");
 PlayerRoutes(app);
+
+const GameRoutes = require("./routes/game.routes");
+GameRoutes(app);
 
 // const UserRoutes = require("./routes/user.routes");
 // UserRoutes(app);
