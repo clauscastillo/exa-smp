@@ -12,12 +12,24 @@ import Team from "./views/Team";
 function App() {
   const [toggle, setToggle] = useState(false);
   const [teams, setTeams] = useState([]);
+  const [games, setGames] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:8000/api/teams").then((res) => {
-      setTeams(res.data);
-      console.log(res.data);
-    });
+    axios
+      .get("http://localhost:8000/api/teams")
+      .then((res) => {
+        setTeams(res.data);
+        console.log(res.data);
+      })
+      .catch((err) => console.log(err));
+
+    axios
+      .get("http://localhost:8000/api/games")
+      .then((res) => {
+        setGames(res.data);
+        console.log(res.data);
+      })
+      .catch((err) => console.log(err));
   }, []);
 
   return (
@@ -25,7 +37,10 @@ function App() {
       <BrowserRouter>
         <Header toggle={toggle} setToggle={setToggle} />
         <Routes>
-          <Route path="/" element={<Index teams={teams} />}></Route>
+          <Route
+            path="/"
+            element={<Index teams={teams} games={games} />}
+          ></Route>
           <Route path="/admin731649" element={<Admin />}></Route>
           <Route path="/equipos" element={<Teams teams={teams} />}></Route>
           <Route path="/equipos/:id" element={<Team teams={teams} />}></Route>
