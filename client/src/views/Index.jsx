@@ -17,245 +17,45 @@ const Index = ({ teams }) => {
       .catch((err) => console.log(err));
   }, []);
   const [alternate, setAlternate] = useState(true);
-  return (
-    <div className="container">
-      <main>
-        <section>
-          <div className="select">
-            <div
-              className={alternate ? "selected" : "not-selected"}
-              onClick={() => setAlternate(true)}
-            >
-              Fechas
-            </div>
-            <div
-              className={alternate ? "not-selected" : "selected"}
-              onClick={() => setAlternate(false)}
-            >
-              Partidos
-            </div>
-          </div>
-        </section>
-        {loaded && (
-          <>
-            <section
-              className={alternate ? "games select-show" : "select-hide"}
-            >
-              {noDateThree ? (
-                <h2>Aún no se emparejaron los equipos de la fecha 3</h2>
-              ) : null}
-              {!noDateThree && (
-                <article className="fechas">
-                  <div className="fechas-header">
-                    <h2 className="fecha">Clausura - Fecha 3</h2>
-                  </div>
-                  <p>Sábado 26 de agosto</p>
-                  <div className="section-masc">
-                    <p className="masculino">Masculino</p>
-                    <hr />
-                    {games
-                      .filter(
-                        (game) =>
-                          game.categorie === "masculino" && game.date === 3
-                      )
-                      .map((game, index) => {
-                        return (
-                          <div className="vs" key={index}>
-                            <p className="text-left">
-                              {
-                                teams.find((team) => team.teamId === game.local)
-                                  .name
-                              }
-                              <img
-                                src={
-                                  teams.find(
-                                    (team) => team.teamId === game.local
-                                  ).shieldUrl
-                                }
-                                alt=""
-                                className="img-left"
-                              />
-                            </p>
-                            <span>{game.hour}</span>
-                            <p className="text-right">
-                              <img
-                                src={
-                                  teams.find(
-                                    (team) => team.teamId === game.visitor
-                                  ).shieldUrl
-                                }
-                                alt=""
-                                className="img-right"
-                              />
-                              {
-                                teams.find(
-                                  (team) => team.teamId === game.visitor
-                                ).name
-                              }
-                            </p>
-                          </div>
-                        );
-                      })}
-                  </div>
-                  <div className="section-fem">
-                    <p className="femenino">Femenino</p>
-                    <hr />
-                    {games
-                      .filter(
-                        (game) =>
-                          game.categorie === "femenino" && game.date === 3
-                      )
-                      .map((game, index) => {
-                        return (
-                          <div className="vs" key={index}>
-                            <p className="text-left">
-                              {
-                                teams.find((team) => team.teamId === game.local)
-                                  .name
-                              }
-                              <img
-                                src={
-                                  teams.find(
-                                    (team) => team.teamId === game.local
-                                  ).shieldUrl
-                                }
-                                alt=""
-                                className="img-left"
-                              />
-                            </p>
-                            <span>{game.hour}</span>
-                            <p className="text-right">
-                              <img
-                                src={
-                                  teams.find(
-                                    (team) => team.teamId === game.visitor
-                                  ).shieldUrl
-                                }
-                                alt=""
-                                className="img-right"
-                              />
-                              {
-                                teams.find(
-                                  (team) => team.teamId === game.visitor
-                                ).name
-                              }
-                            </p>
-                          </div>
-                        );
-                      })}
-                  </div>
-                </article>
-              )}
-            </section>
-            <section
-              className={alternate ? "select-hide" : "games select-show"}
-            >
-              <article className="fechas">
-                <div className="fechas-header">
-                  <h2 className="fecha">Clausura - Fecha 2</h2>
-                </div>
-                <div className="section-masc">
-                  <p className="masculino">Masculino</p>
-                  <hr />
 
-                  {games
-                    .filter(
-                      (game) =>
-                        game.categorie === "masculino" && game.date === 2
-                    )
-                    .map((game, index) => {
-                      return (
-                        <div className="vs" key={index}>
-                          <p className="text-left">
-                            {
-                              teams.find((team) => team.teamId === game.local)
-                                .name
-                            }
-                            <img
-                              src={
-                                teams.find((team) => team.teamId === game.local)
-                                  .shieldUrl
-                              }
-                              alt=""
-                              className="img-left"
-                            />
-                          </p>
-                          <span>{game.result}</span>
-                          <p className="text-right">
-                            <img
-                              src={
-                                teams.find(
-                                  (team) => team.teamId === game.visitor
-                                ).shieldUrl
-                              }
-                              alt=""
-                              className="img-right"
-                            />
-                            {
-                              teams.find((team) => team.teamId === game.visitor)
-                                .name
-                            }
-                          </p>
-                        </div>
-                      );
-                    })}
-                </div>
-                <div className="section-fem">
-                  <p className="femenino">Femenino</p>
-                  <hr />
-                  {games
-                    .filter(
-                      (game) => game.categorie === "femenino" && game.date === 2
-                    )
-                    .map((game, index) => {
-                      return (
-                        <div className="vs" key={index}>
-                          <p className="text-left">
-                            {
-                              teams.find((team) => team.teamId === game.local)
-                                .name
-                            }
-                            <img
-                              src={
-                                teams.find((team) => team.teamId === game.local)
-                                  .shieldUrl
-                              }
-                              alt=""
-                              className="img-left"
-                            />
-                          </p>
-                          <span>{game.result}</span>
-                          <p className="text-right">
-                            <img
-                              src={
-                                teams.find(
-                                  (team) => team.teamId === game.visitor
-                                ).shieldUrl
-                              }
-                              alt=""
-                              className="img-right"
-                            />
-                            {
-                              teams.find((team) => team.teamId === game.visitor)
-                                .name
-                            }
-                          </p>
-                        </div>
-                      );
-                    })}
-                </div>
-              </article>
+  if (loaded === true) {
+    return (
+      <div className="container">
+        <main>
+          <section>
+            <div className="select">
+              <div
+                className={alternate ? "selected" : "not-selected"}
+                onClick={() => setAlternate(true)}
+              >
+                Fechas
+              </div>
+              <div
+                className={alternate ? "not-selected" : "selected"}
+                onClick={() => setAlternate(false)}
+              >
+                Partidos
+              </div>
+            </div>
+          </section>
+
+          <section className={alternate ? "games select-show" : "select-hide"}>
+            {noDateThree ? (
+              <h2>Aún no se emparejaron los equipos de la fecha 3</h2>
+            ) : null}
+            {!noDateThree && (
               <article className="fechas">
                 <div className="fechas-header">
-                  <h2 className="fecha">Clausura - Fecha 1</h2>
+                  <h2 className="fecha">Clausura - Fecha 3</h2>
                 </div>
+                <p>Sábado 26 de agosto</p>
                 <div className="section-masc">
                   <p className="masculino">Masculino</p>
                   <hr />
                   {games
                     .filter(
                       (game) =>
-                        game.categorie === "masculino" && game.date === 1
+                        game.categorie === "masculino" && game.date === 3
                     )
                     .map((game, index) => {
                       return (
@@ -274,7 +74,7 @@ const Index = ({ teams }) => {
                               className="img-left"
                             />
                           </p>
-                          <span>{game.result}</span>
+                          <span>{game.hour}</span>
                           <p className="text-right">
                             <img
                               src={
@@ -299,7 +99,7 @@ const Index = ({ teams }) => {
                   <hr />
                   {games
                     .filter(
-                      (game) => game.categorie === "femenino" && game.date === 1
+                      (game) => game.categorie === "femenino" && game.date === 3
                     )
                     .map((game, index) => {
                       return (
@@ -318,7 +118,7 @@ const Index = ({ teams }) => {
                               className="img-left"
                             />
                           </p>
-                          <span>{game.result}</span>
+                          <span>{game.hour}</span>
                           <p className="text-right">
                             <img
                               src={
@@ -339,12 +139,199 @@ const Index = ({ teams }) => {
                     })}
                 </div>
               </article>
-            </section>
-          </>
-        )}
-      </main>
-    </div>
-  );
+            )}
+          </section>
+          <section className={alternate ? "select-hide" : "games select-show"}>
+            <article className="fechas">
+              <div className="fechas-header">
+                <h2 className="fecha">Clausura - Fecha 2</h2>
+              </div>
+              <div className="section-masc">
+                <p className="masculino">Masculino</p>
+                <hr />
+
+                {games
+                  .filter(
+                    (game) => game.categorie === "masculino" && game.date === 2
+                  )
+                  .map((game, index) => {
+                    return (
+                      <div className="vs" key={index}>
+                        <p className="text-left">
+                          {
+                            teams.find((team) => team.teamId === game.local)
+                              .name
+                          }
+                          <img
+                            src={
+                              teams.find((team) => team.teamId === game.local)
+                                .shieldUrl
+                            }
+                            alt=""
+                            className="img-left"
+                          />
+                        </p>
+                        <span>{game.result}</span>
+                        <p className="text-right">
+                          <img
+                            src={
+                              teams.find((team) => team.teamId === game.visitor)
+                                .shieldUrl
+                            }
+                            alt=""
+                            className="img-right"
+                          />
+                          {
+                            teams.find((team) => team.teamId === game.visitor)
+                              .name
+                          }
+                        </p>
+                      </div>
+                    );
+                  })}
+              </div>
+              <div className="section-fem">
+                <p className="femenino">Femenino</p>
+                <hr />
+                {games
+                  .filter(
+                    (game) => game.categorie === "femenino" && game.date === 2
+                  )
+                  .map((game, index) => {
+                    return (
+                      <div className="vs" key={index}>
+                        <p className="text-left">
+                          {
+                            teams.find((team) => team.teamId === game.local)
+                              .name
+                          }
+                          <img
+                            src={
+                              teams.find((team) => team.teamId === game.local)
+                                .shieldUrl
+                            }
+                            alt=""
+                            className="img-left"
+                          />
+                        </p>
+                        <span>{game.result}</span>
+                        <p className="text-right">
+                          <img
+                            src={
+                              teams.find((team) => team.teamId === game.visitor)
+                                .shieldUrl
+                            }
+                            alt=""
+                            className="img-right"
+                          />
+                          {
+                            teams.find((team) => team.teamId === game.visitor)
+                              .name
+                          }
+                        </p>
+                      </div>
+                    );
+                  })}
+              </div>
+            </article>
+            <article className="fechas">
+              <div className="fechas-header">
+                <h2 className="fecha">Clausura - Fecha 1</h2>
+              </div>
+              <div className="section-masc">
+                <p className="masculino">Masculino</p>
+                <hr />
+                {games
+                  .filter(
+                    (game) => game.categorie === "masculino" && game.date === 1
+                  )
+                  .map((game, index) => {
+                    return (
+                      <div className="vs" key={index}>
+                        <p className="text-left">
+                          {
+                            teams.find((team) => team.teamId === game.local)
+                              .name
+                          }
+                          <img
+                            src={
+                              teams.find((team) => team.teamId === game.local)
+                                .shieldUrl
+                            }
+                            alt=""
+                            className="img-left"
+                          />
+                        </p>
+                        <span>{game.result}</span>
+                        <p className="text-right">
+                          <img
+                            src={
+                              teams.find((team) => team.teamId === game.visitor)
+                                .shieldUrl
+                            }
+                            alt=""
+                            className="img-right"
+                          />
+                          {
+                            teams.find((team) => team.teamId === game.visitor)
+                              .name
+                          }
+                        </p>
+                      </div>
+                    );
+                  })}
+              </div>
+              <div className="section-fem">
+                <p className="femenino">Femenino</p>
+                <hr />
+                {games
+                  .filter(
+                    (game) => game.categorie === "femenino" && game.date === 1
+                  )
+                  .map((game, index) => {
+                    return (
+                      <div className="vs" key={index}>
+                        <p className="text-left">
+                          {
+                            teams.find((team) => team.teamId === game.local)
+                              .name
+                          }
+                          <img
+                            src={
+                              teams.find((team) => team.teamId === game.local)
+                                .shieldUrl
+                            }
+                            alt=""
+                            className="img-left"
+                          />
+                        </p>
+                        <span>{game.result}</span>
+                        <p className="text-right">
+                          <img
+                            src={
+                              teams.find((team) => team.teamId === game.visitor)
+                                .shieldUrl
+                            }
+                            alt=""
+                            className="img-right"
+                          />
+                          {
+                            teams.find((team) => team.teamId === game.visitor)
+                              .name
+                          }
+                        </p>
+                      </div>
+                    );
+                  })}
+              </div>
+            </article>
+          </section>
+        </main>
+      </div>
+    );
+  } else {
+    <div>Cargando</div>;
+  }
 };
 
 Index.propTypes = {
