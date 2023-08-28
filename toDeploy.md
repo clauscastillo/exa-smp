@@ -55,3 +55,6 @@ $ node server.js
 $ sudo npm i pm2 -g
 $ pm2 start server.js
 $ pm2 status
+
+$ Cambiar el cors
+$
