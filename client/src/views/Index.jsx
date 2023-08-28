@@ -4,20 +4,23 @@ import { PropTypes } from "prop-types";
 
 const Index = ({ teams }) => {
   const [games, setGames] = useState([]);
+  const [loaded, setLoaded] = useState(false);
   const noDateThree = games.every((game) => game.date !== 3);
   useEffect(() => {
     axios
       .get("http://localhost:8000/api/games")
       .then((res) => {
         setGames(res.data);
-        console.log(res.data);
+        setLoaded(true);
       })
 
       .catch((err) => console.log(err));
   }, []);
   const [alternate, setAlternate] = useState(true);
   return (
-    <div className="container">
+    {
+      loaded && 
+      <div className="container">
       <main>
         <section>
           <div className="select">
@@ -310,6 +313,8 @@ const Index = ({ teams }) => {
         </section>
       </main>
     </div>
+    }
+    
   );
 };
 
