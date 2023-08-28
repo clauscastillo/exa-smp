@@ -8,14 +8,6 @@ const Index = ({ teams, games }) => {
   return (
     <div className="container">
       <main>
-        <button
-          onClick={() => {
-            console.log(games);
-            console.log(teams);
-          }}
-        >
-          O
-        </button>
         <section>
           <div className="select">
             <div
