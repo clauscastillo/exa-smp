@@ -9,20 +9,19 @@ const TeamSchema = mongoose.Schema(
     teamId: {
       type: Number,
       required: [true, "id of team is required"],
-    },
-    games: {
-      type: Array,
-      default: [],
-    },
-    players: {
-      type: Array,
-      default: [],
+      unique: true,
     },
     shieldUrl: {
       type: String,
     },
-    stats: {
-      type: Array,
+    points: {
+      type: Number,
+    },
+    played: {
+      type: Number,
+    },
+    diff: {
+      type: Number,
     },
     group: {
       type: String,

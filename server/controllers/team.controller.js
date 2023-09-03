@@ -42,7 +42,7 @@ const addTeams = (req, res) => {
 const editStats = (req, res) => {
   const { body } = req;
   Team.findOneAndUpdate(
-    { teamId: body.teamId },
+    { name: body.name },
     { stats: [body.points, body.played, body.diff] }
   )
     .then((response) => res.json(response))

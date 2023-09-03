@@ -37,10 +37,10 @@ const Ranking = ({ teams }) => {
           {teams
             .filter((team) => team.teamId < 14 && team.group === "A")
             .sort((a, b) => {
-              if (a.stats[0] === b.stats[0]) {
-                return b.stats[2] - a.stats[2]; // Ordenar de mayor a menor por posición 2 si posición 0 es igual
+              if (a.points === b.points) {
+                return b.diff - a.diff; // Ordenar de mayor a menor por posición 2 si posición 0 es igual
               } else {
-                return b.stats[0] - a.stats[0]; // Ordenar de mayor a menor por posición 0
+                return b.points - a.points; // Ordenar de mayor a menor por posición 0
               }
             })
             .map((team, index) => {
@@ -51,9 +51,9 @@ const Ranking = ({ teams }) => {
                     <img src={team.shieldUrl} alt="" />
                     {team.name}
                   </td>
-                  <td className="td-center">{team.stats[1]}</td>
-                  <td className="td-center">{team.stats[2]}</td>
-                  <td className="table-pts td-center">{team.stats[0]}</td>
+                  <td className="td-center">{team.played}</td>
+                  <td className="td-center">{team.diff}</td>
+                  <td className="table-pts td-center">{team.points}</td>
                 </tr>
               );
             })}
@@ -71,10 +71,10 @@ const Ranking = ({ teams }) => {
           {teams
             .filter((team) => team.teamId < 14 && team.group === "B")
             .sort((a, b) => {
-              if (a.stats[0] === b.stats[0]) {
-                return b.stats[2] - a.stats[2]; // Ordenar de mayor a menor por posición 2 si posición 0 es igual
+              if (a.points === b.points) {
+                return b.diff - a.diff; // Ordenar de mayor a menor por posición 2 si posición 0 es igual
               } else {
-                return b.stats[0] - a.stats[0]; // Ordenar de mayor a menor por posición 0
+                return b.points - a.points; // Ordenar de mayor a menor por posición 0
               }
             })
             .map((team, index) => {
@@ -85,9 +85,9 @@ const Ranking = ({ teams }) => {
                     <img src={team.shieldUrl} alt="" />
                     {team.name}
                   </td>
-                  <td className="td-center">{team.stats[1]}</td>
-                  <td className="td-center">{team.stats[2]}</td>
-                  <td className="table-pts td-center">{team.stats[0]}</td>
+                  <td className="td-center">{team.played}</td>
+                  <td className="td-center">{team.diff}</td>
+                  <td className="table-pts td-center">{team.points}</td>
                 </tr>
               );
             })}
@@ -108,10 +108,10 @@ const Ranking = ({ teams }) => {
           {teams
             .filter((team) => team.teamId > 13)
             .sort((a, b) => {
-              if (a.stats[0] === b.stats[0]) {
-                return b.stats[2] - a.stats[2]; // Ordenar de mayor a menor por posición 2 si posición 0 es igual
+              if (a.points === b.points) {
+                return b.diff - a.diff; // Ordenar de mayor a menor por posición 2 si posición 0 es igual
               } else {
-                return b.stats[0] - a.stats[0]; // Ordenar de mayor a menor por posición 0
+                return b.points - a.points; // Ordenar de mayor a menor por posición 0
               }
             })
             .map((team, index) => {
@@ -122,9 +122,9 @@ const Ranking = ({ teams }) => {
                     <img src={team.shieldUrl} alt="" />
                     {team.name}
                   </td>
-                  <td className="td-center">{team.stats[1]}</td>
-                  <td className="td-center">{team.stats[2]}</td>
-                  <td className="table-pts td-center">{team.stats[0]}</td>
+                  <td className="td-center">{team.played}</td>
+                  <td className="td-center">{team.diff}</td>
+                  <td className="table-pts td-center">{team.points}</td>
                 </tr>
               );
             })}

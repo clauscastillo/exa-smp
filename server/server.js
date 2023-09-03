@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const port = process.env.PORT || 8000;
 const cors = require("cors");
-const Player = require("./models/player.model");
+const Games = require("./models/game.model");
 
 // Iniciar server
 
@@ -39,3 +39,5 @@ GameRoutes(app);
 
 // const UserRoutes = require("./routes/user.routes");
 // UserRoutes(app);
+
+Games.deleteMany().then((res) => console.log(res));

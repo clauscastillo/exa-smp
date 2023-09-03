@@ -31,10 +31,8 @@ const GameSchema = mongoose.Schema(
       type: String,
       required: true,
     },
-    result: {
-      type: String,
-      required: true,
-    },
+    localGoals: Number,
+    visitorGoals: Number,
   },
   { timestamps: true }
 );

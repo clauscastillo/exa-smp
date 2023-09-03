@@ -1,7 +1,9 @@
 import { useState } from "react";
 import axios from "axios";
+import AddResult from "../components/AddResult";
+import GamesAdmin from "../components/GamesAdmin";
 
-const Admin = () => {
+const Admin = ({ teams, games }) => {
   const [cat, setCat] = useState(true);
   const [form, setForm] = useState({
     gameId: 0,
@@ -11,7 +13,8 @@ const Admin = () => {
     played: false,
     date: 0,
     categorie: "masculino",
-    result: "",
+    localGoals: 0,
+    visitorGoals: 0,
   });
 
   const handleForm = (e) => {
@@ -41,11 +44,13 @@ const Admin = () => {
           form.date.toString(),
         played: false,
       })
-      .then((res) => console.log(res))
+      .then((res) => console.log(res.data))
       .catch((err) => console.log(err));
   };
+
   return (
     <div>
+      <GamesAdmin teams={teams} />
       <form className="add-player" action="" onSubmit={handleSubmit}>
         <label htmlFor="categorie">Categoría</label>
         <select name="categorie" id="categorie" onChange={handleForm}>
@@ -136,9 +141,23 @@ const Admin = () => {
           <option value="22:00">22:00</option>
         </select>
 
-        <label htmlFor="result">Resultado</label>
-        <input name="result" type="text" id="result" onChange={handleForm} />
         <button type="submit">Agregar encuentro</button>
+      </form>
+      <form
+        className="delete-players"
+        action=""
+        onSubmit={(e) => {
+          e.preventDefault();
+          axios
+            .delete(
+              "http://localhost:8000/api/deleteplayers/" + e.target[0].value
+            )
+            .then((res) => console.log(res.data))
+            .catch((err) => console.log(err));
+        }}
+      >
+        <input type="number" min={1} max={19} />
+        <button type="submit">Eliminar jugadores del equipo</button>
       </form>
     </div>
   );

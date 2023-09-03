@@ -1,0 +1,210 @@
+[
+    {
+        "local": 11,
+        "visitor": 2,
+        "gameId": "1121",
+        "hour": "18:00",
+        "categorie": "masculino",
+        "date": 1
+    },
+    {
+        "local": 18,
+        "visitor": 19,
+        "gameId": "18191",
+        "hour": "18:30",
+        "categorie": "femenino",
+        "date": 1
+    },
+    {
+        "local": 3,
+        "visitor": 10,
+        "gameId": "3101",
+        "hour": "19:00",
+        "categorie": "masculino",
+        "date": 1
+    },
+    {
+        "local": 15,
+        "visitor": 17,
+        "gameId": "15171",
+        "hour": "19:30",
+        "categorie": "femenino",
+        "date": 1
+    },
+    {
+        "local": 13,
+        "visitor": 17,
+        "gameId": "13171",
+        "hour": "20:00",
+        "categorie": "masculino",
+        "date": 1
+    },
+    {
+        "local": 13,
+        "visitor": 16,
+        "gameId": "13161",
+        "hour": "20:30",
+        "categorie": "femenino",
+        "date": 1
+    },
+    {
+        "local": 6,
+        "visitor": 8,
+        "gameId": "681",
+        "hour": "21:00",
+        "categorie": "masculino",
+        "date": 1
+    },
+    {
+        "local": 5,
+        "visitor": 4,
+        "gameId": "541",
+        "hour": "22:00",
+        "categorie": "masculino",
+        "date": 1
+    },
+    {
+        "local": 2,
+        "visitor": 7,
+        "gameId": "272",
+        "hour": "18:00",
+        "categorie": "masculino",
+        "date": 2
+    },
+    {
+        "local": 18,
+        "visitor": 17,
+        "gameId": "18172",
+        "hour": "18:30",
+        "categorie": "femenino",
+        "date": 2
+    },
+    {
+        "local": 6,
+        "visitor": 3,
+        "gameId": "632",
+        "hour": "19:00",
+        "categorie": "masculino",
+        "date": 2
+    },
+    {
+        "local": 15,
+        "visitor": 3,
+        "gameId": "1532",
+        "hour": "19:30",
+        "categorie": "femenino",
+        "date": 2
+    },
+    {
+        "local": 8,
+        "visitor": 10,
+        "gameId": "8102",
+        "hour": "20:00",
+        "categorie": "masculino",
+        "date": 2
+    },
+    {
+        "local": 16,
+        "visitor": 19,
+        "gameId": "16192",
+        "hour": "20:30",
+        "categorie": "femenino",
+        "date": 2
+    },
+    {
+        "local": 11,
+        "visitor": 13,
+        "gameId": "11132",
+        "hour": "21:00",
+        "categorie": "masculino",
+        "date": 2
+    },
+    {
+        "local": 4,
+        "visitor": 12,
+        "gameId": "4122",
+        "hour": "21:30",
+        "categorie": "masculino",
+        "date": 2
+    },
+    {
+        "local": 9,
+        "visitor": 1,
+        "gameId": "912",
+        "hour": "22:00",
+        "categorie": "masculino",
+        "date": 2
+    },
+    {
+        "local": 2,
+        "visitor": 1,
+        "gameId": "213",
+        "hour": "18:00",
+        "categorie": "masculino",
+        "date": 3
+    },
+    {
+        "local": 18,
+        "visitor": 1,
+        "gameId": "1813",
+        "hour": "18:30",
+        "categorie": "femenino",
+        "date": 3
+    },
+    {
+        "local": 12,
+        "visitor": 8,
+        "gameId": "1283",
+        "hour": "19:00",
+        "categorie": "masculino",
+        "date": 3
+    },
+    {
+        "local": 19,
+        "visitor": 15,
+        "gameId": "19153",
+        "hour": "19:30",
+        "categorie": "femenino",
+        "date": 3
+    },
+    {
+        "local": 4,
+        "visitor": 6,
+        "gameId": "463",
+        "hour": "20:00",
+        "categorie": "masculino",
+        "date": 3
+    },
+    {
+        "local": 16,
+        "visitor": 17,
+        "gameId": "16173",
+        "hour": "20:30",
+        "categorie": "femenino",
+        "date": 3
+    },
+    {
+        "local": 13,
+        "visitor": 7,
+        "gameId": "1373",
+        "hour": "21:00",
+        "categorie": "masculino",
+        "date": 3
+    },
+    {
+        "local": 9,
+        "visitor": 11,
+        "gameId": "9113",
+        "hour": "21:30",
+        "categorie": "masculino",
+        "date": 3
+    },
+    {
+        "local": 10,
+        "visitor": 5,
+        "gameId": "1053",
+        "hour": "22:00",
+        "categorie": "masculino",
+        "date": 3
+    }
+]

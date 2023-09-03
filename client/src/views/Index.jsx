@@ -152,7 +152,9 @@ const Index = ({ teams, games }) => {
                             className="img-left"
                           />
                         </p>
-                        <span>{game.result}</span>
+                        <span>
+                          {game.localGoals}-{game.visitorGoals}
+                        </span>
                         <p className="text-right">
                           <img
                             src={
@@ -196,7 +198,9 @@ const Index = ({ teams, games }) => {
                             className="img-left"
                           />
                         </p>
-                        <span>{game.result}</span>
+                        <span>
+                          {game.localGoals}-{game.visitorGoals}
+                        </span>
                         <p className="text-right">
                           <img
                             src={
@@ -245,7 +249,9 @@ const Index = ({ teams, games }) => {
                             className="img-left"
                           />
                         </p>
-                        <span>{game.result}</span>
+                        <span>
+                          {game.localGoals}-{game.visitorGoals}
+                        </span>
                         <p className="text-right">
                           <img
                             src={
@@ -289,7 +295,9 @@ const Index = ({ teams, games }) => {
                             className="img-left"
                           />
                         </p>
-                        <span>{game.result}</span>
+                        <span>
+                          {game.localGoals}-{game.visitorGoals}
+                        </span>
                         <p className="text-right">
                           <img
                             src={

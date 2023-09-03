@@ -12,7 +12,10 @@ const Team = ({ teams }) => {
   useEffect(() => {
     axios
       .get("http://localhost:8000/api/playersForTeam/" + params.id)
-      .then((res) => setPlayers(res.data))
+      .then((res) => {
+        setPlayers(res.data);
+        console.log(res.data);
+      })
       .catch((err) => console.log(err));
 
     const selectedTeam = teams.filter(
@@ -24,29 +27,36 @@ const Team = ({ teams }) => {
 
   return (
     <div>
-      <div className="team-title">
-        <img src={selected.shieldUrl} alt="" width={"100px"} />
-        <h1>{selected.name}</h1>
-      </div>
+      {selected && (
+        <div className="team-title">
+          <img src={selected.shieldUrl} alt="" width={"100px"} />
+          <h1>{selected.name}</h1>
+        </div>
+      )}
+
       <hr />
       <div className="players">
         <h3 className="title-players">Jugadores</h3>
-        <ul className="list">
-          {players
-            .sort((a, b) => a.number - b.number)
-            .map((player) => {
-              return (
-                <>
-                  <li key={player._id} className="player-list">
-                    <img src="../assets/players/jugador.jfif" alt="" />
+        {players
+          .sort((a, b) => a.number - b.number)
+          .map((player) => {
+            return (
+              <>
+                <div key={player._id} className="player-list">
+                  <img
+                    src={player.pic ? player.pic : "/players/avatar.png"}
+                    alt=""
+                    className="player-photo"
+                  />
+                  <div className="player-info">
                     <p>{player.number}</p>
                     <p>{player.name}</p>
-                  </li>
-                  <hr className="div-players" />
-                </>
-              );
-            })}
-        </ul>
+                  </div>
+                </div>
+                <hr className="div-players" />
+              </>
+            );
+          })}
       </div>
     </div>
   );

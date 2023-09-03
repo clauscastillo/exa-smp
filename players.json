@@ -1,0 +1,347 @@
+
+[
+    {"name": "Juan Balbuena", "number": 1, "teamId": 1},
+{"name": "Rodrigo García", "number": 13, "teamId": 1},
+{"name": "Hernán Vázquez", "number": 8, "teamId": 1},
+{"name": "Alejandro Peralta", "number": 9, "teamId": 1},
+{"name": "Junior Gaona", "number": 5, "teamId": 1},
+{"name": "David Hermosilla", "number": 19, "teamId": 1},
+{"name": "Enrique Zulin", "number": 17, "teamId": 1},
+{"name": "Rubén Insfran", "number": 10, "teamId": 1},
+{"name": "José Rojas", "number": 3, "teamId": 1},
+{"name": "Milo Ortíz", "number": 70, "teamId": 1},
+{"name": "Rodrigo Gaona", "number": 7, "teamId": 1},
+{"name": "Miguel Montiel", "number": 44, "teamId": 1},
+{"name": "Augusto Olmedo", "number": 21, "teamId": 1},
+{"name": "Emmanuel Arevalos", "number": 96, "teamId": 1},
+{"name": "Guille Rodríguez", "number": 14, "teamId": 1},
+{"name": "Alejandro Torres", "number": 22, "teamId": 1},
+{"name": "Fernando Ortigoza", "number": 6, "teamId": 1},
+{"name": "Fernando Mariño", "number": 11, "teamId": 1},
+{"name": "Luis Barrientos", "number": 2, "teamId": 1},
+{"name": "Iván Aquino", "number": 4, "teamId": 1},
+{"name": "Cristian Ascona", "number": 13, "teamId": 1}
+]
+
+[{"name": "Edison Clau", "number": 22, "teamId": 2},
+{"name": "Brahian Clau", "number": 11, "teamId": 2},
+{"name": "Lucas Martínez", "number": 90, "teamId": 2},
+{"name": "Emmanuel Martínez", "number": 10, "teamId": 2},
+{"name": "Mauro Bordón", "number": 7, "teamId": 2},
+{"name": "Víctor Penayo", "number": 20, "teamId": 2},
+{"name": "Brahian Trinidad", "number": 8, "teamId": 2},
+{"name": "Heric Álvarez", "number": 80, "teamId": 2},
+{"name": "Gustavo Salinas", "number": 12, "teamId": 2},
+{"name": "Miguel Gómez", "number": 17, "teamId": 2},
+{"name": "Esteban Salinas", "number": 13, "teamId": 2},
+{"name": "Alberto Villalba", "number": 1, "teamId": 2},
+{"name": "Víctor López", "number": 23, "teamId": 2},
+{"name": "Emmanuel Paiva", "number": 6, "teamId": 2},
+{"name": "Josías Martínez", "number": 9, "teamId": 2},
+{"name": "Tobías Alonso", "number": 79, "teamId": 2},
+{"name": "William Alvarenga", "number": 25, "teamId": 2}]
+
+[{"name": "Enrique Muñoz", "number": 7, "teamId": 3},
+{"name": "David Benítez", "number": 19, "teamId": 3},
+{"name": "Isa Armoa", "number": 20, "teamId": 3},
+{"name": "Edson Enrique", "number": 28, "teamId": 3},
+{"name": "Sergio López", "number": 2, "teamId": 3},
+{"name": "Manu Verdún", "number": 11, "teamId": 3},
+{"name": "Lucas Centurión", "number": 30, "teamId": 3},
+{"name": "Alejandro Centurión", "number": 3, "teamId": 3},
+{"name": "Edilson Robles", "number": 8, "teamId": 3},
+{"name": "Rilner Cazado", "number": 21, "teamId": 3},
+{"name": "Alexis Balbuena", "number": 15, "teamId": 3},
+{"name": "César Martínez", "number": 17, "teamId": 3},
+{"name": "Armando Ramírez", "number": 8, "teamId": 3},
+{"name": "Osmel Cazado", "number": 10, "teamId": 3},
+{"name": "Nelson Cabrera", "number": 1, "teamId": 3}]
+
+[{"name": "Dario Jara", "number": , "teamId": 4},
+{"name": "José Barrios", "number": , "teamId": 4},
+{"name": "Luis Jara", "number": , "teamId": 4},
+{"name": "Artemio Villar", "number": , "teamId": 4},
+{"name": "Junior Gaona", "number": , "teamId": 4},
+{"name": "Manuel Hashimoto", "number": , "teamId": 4},
+{"name": "Danilo Colman", "number": , "teamId": 4},
+{"name": "Carlos Giménez", "number": , "teamId": 4},
+{"name": "Rodrigo Camacho", "number": , "teamId": 4},
+{"name": "Carlos Urbieta", "number": , "teamId": 4},
+{"name": "Julio Rotela", "number": , "teamId": 4},
+{"name": "Julio Rejala", "number": , "teamId": 4},
+{"name": "Freddy Antunez", "number": , "teamId": 4},
+{"name": "Mathias Díaz", "number": , "teamId": 4},
+{"name": "Alberto Vera", "number": , "teamId": 4},
+{"name": "Lucas Sanabria", "number": , "teamId": 4}]
+
+[{"name": "Fredy", "number": 5, "teamId": 5},
+{"name": "C. Gamarra", "number": 7, "teamId": 5},
+{"name": "Gustavo T", "number": 8, "teamId": 5},
+{"name": "Ocampos", "number": 11, "teamId": 5},
+{"name": "Riveros", "number": 16, "teamId": 5},
+{"name": "Marcos F", "number": 17, "teamId": 5},
+{"name": "W. Salcedo", "number": 18, "teamId": 5},
+{"name": "O. Salcedo", "number": 24, "teamId": 5},
+{"name": "Avam", "number": 27, "teamId": 5},
+{"name": "A. Avalos", "number": 29, "teamId": 5},
+{"name": "Carlitos", "number": 87, "teamId": 5},
+{"name": "Jeison", "number": 88, "teamId": 5},
+{"name": "J. Ojeda", "number": 13, "teamId": 5},
+{"name": "Portillo", "number": 2, "teamId": 5}]
+
+[{"name": "Alexis Zaracho", "number": 9, "teamId": 6},
+{"name": "Enzo Figueredo", "number": 5, "teamId": 6},
+{"name": "Leandro González", "number": 15, "teamId": 6},
+{"name": "Blas Coronel", "number": 10, "teamId": 6},
+{"name": "José Cáceres", "number": 3, "teamId": 6},
+{"name": "Javier López", "number": 17, "teamId": 6},
+{"name": "Lucas López", "number": 8, "teamId": 6},
+{"name": "Renato Figueredo", "number": 22, "teamId": 6},
+{"name": "Gonzalo Piris", "number": 21, "teamId": 6},
+{"name": "Nahuel González", "number": 77, "teamId": 6},
+{"name": "Alvaro González", "number": 4, "teamId": 6}]
+
+[{"name": "Stiven Centurion", "number": 20, "teamId": 7},
+{"name": "Anderson Pérez", "number": 6, "teamId": 7},
+{"name": "Lucas Sanabria", "number": 10, "teamId": 7},
+{"name": "Mauro Alvarenga", "number": 24, "teamId": 7},
+{"name": "Matias Rodríguez", "number": 19, "teamId": 7},
+{"name": "Alejandro Díaz", "number": 9, "teamId": 7},
+{"name": "Ronaldo Esquivel", "number": 17, "teamId": 7},
+{"name": "Ezequiel Martínez", "number": 1, "teamId": 7},
+{"name": "Víctor Giménez", "number": 7, "teamId": 7}]
+
+[{"name": "A. Rodríguez", "number": 23, "teamId": 8},
+{"name": "A. López", "number": 10, "teamId": 8},
+{"name": "Chelo", "number": 6, "teamId": 8},
+{"name": "Josias", "number": 7, "teamId": 8},
+{"name": "Molinas", "number": 21, "teamId": 8},
+{"name": "Paredes", "number": 14, "teamId": 8},
+{"name": "Cesar Amarilla", "number": 80, "teamId": 8},
+{"name": "Lucas", "number": 77, "teamId": 8},
+{"name": "Duré", "number": 92, "teamId": 8},
+{"name": "Riquelme", "number": 11, "teamId": 8},
+{"name": "González", "number": 17, "teamId": 8}]
+
+[{"name": "Yamil Arias", "number": 69, "teamId": 9},
+{"name": "Federico Soto", "number": 26, "teamId": 9},
+{"name": "Iván Guillén", "number": 18, "teamId": 9},
+{"name": "Ariel Gill", "number": 8, "teamId": 9},
+{"name": "Fernando Lombardo", "number": 3, "teamId": 9}, 
+{"name": "Fernando Fernández", "number": 9, "teamId": 9},
+{"name": "Jonas Marecos", "number": 19, "teamId": 9},
+{"name": "Walter Morinigo", "number": 11, "teamId": 9},
+{"name": "Cristhian Romero", "number": 7, "teamId": 9},
+{"name": "Matias Ferreira", "number": 10, "teamId": 9},
+{"name": "Ángel González", "number": 6, "teamId": 9},
+{"name": "Mathias Giménez", "number": 25, "teamId": 9},
+{"name": "Tobias Unzain", "number": 80, "teamId": 9},
+{"name": "Elias Bogado", "number": 30, "teamId": 9},
+{"name": "Jesús Asta", "number": 4, "teamId": 9}]
+
+[{"name": "Alberto Vera", "number": 16, "teamId": 10},
+{"name": "Alberto Flores", "number": 3, "teamId": 10},
+{"name": "Carlos Giménez", "number": 8, "teamId": 10},
+{"name": "Carlos Acuña", "number": 17, "teamId": 10},
+{"name": "Carlos Zarate", "number": 11, "teamId": 10},
+{"name": "Cristhian Gonzalez", "number": 7, "teamId": 10},
+{"name": "Erwin Colman", "number": 5, "teamId": 10},
+{"name": "Joel Olmedo", "number": 16, "teamId": 10},
+{"name": "José Leguizamón", "number": 13, "teamId": 10},
+{"name": "Juan Giménez", "number": 19, "teamId": 10},
+{"name": "Julio Rodríguez", "number": 1, "teamId": 10},
+{"name": "Junior Gavilan", "number": 12, "teamId": 10},
+{"name": "Leonardo Gamarra", "number": 14, "teamId": 10},
+{"name": "Matías Giménez", "number": 4, "teamId": 10},
+{"name": "Matías Rolón", "number": 9, "teamId": 10},
+{"name": "Rodrigo Camacho", "number":  , "teamId": 10},
+{"name": "Nixon Ayala", "number": 18, "teamId": 10}]
+
+[{"name": "Alfredo Olmedo", "number": 6, "teamId": 12},
+{"name": "Derlis Franco", "number": 8, "teamId": 12},
+{"name": "Gustavo Aguilera", "number": 5, "teamId": 12},
+{"name": "Gustavo Paiva", "number": 9, "teamId": 12},
+{"name": "Hugo Zena", "number": 19, "teamId": 12},
+{"name": "J. Benegas", "number": 7, "teamId": 12},
+{"name": "Miguel Añazco", "number": , "teamId": 12},
+{"name": "Sebas F", "number": 11, "teamId": 12},
+{"name": "TRU", "number": 10, "teamId": 12}]
+
+[{"name": "Kevin Lanzoni", "number": 7, "teamId": 13},
+{"name": "Jefferson Stumm", "number": 8, "teamId": 13},
+{"name": "Rodrigo Fernández", "number": 23, "teamId": 13},
+{"name": "Nicolás Giménez", "number": 17, "teamId": 13},
+{"name": "Amilcar Suárez", "number": 30, "teamId": 13},
+{"name": "Mauricio Aveiro", "number": 11, "teamId": 13},
+{"name": "William Alvarenga", "number": 10, "teamId": 13},
+{"name": "Diego Aguirre", "number": 20, "teamId": 13},
+{"name": "Edgar Martínez", "number": 6, "teamId": 13},
+{"name": "Steven Neyer", "number": 3, "teamId": 13},
+{"name": "Jonathan Romero", "number": 99, "teamId": 13},
+{"name": "Victor Farias", "number": 21, "teamId": 13},
+{"name": "Ivan Insaurralde", "number": 16, "teamId": 13},
+{"name": "Ivan Castelhao", "number": 80, "teamId": 13}]
+
+[
+    {
+        
+        "name": "Kevin Lanzoni",
+        "number": 7,
+        "teamId": 13,
+        "pic": "/players/atlanta/7"
+    },
+    {
+       
+        "name": "Jefferson Stumm",
+        "number": 8,
+        "teamId": 13,
+        "pic": "/players/atlanta/8"
+    },
+    {
+        
+        "name": "Rodrigo Fernández",
+        "number": 23,
+        "teamId": 13,
+        "pic": "/players/atlanta/23"
+    },
+    {
+
+        "name": "Nicolás Giménez",
+        "number": 17,
+        "teamId": 13,
+        "pic": "/players/atlanta/17"
+    },
+    {
+        "name": "Amilcar Suárez",
+        "number": 30,
+        "teamId": 13,
+        "pic": "/players/atlanta/30"
+    },
+    {
+     
+        "name": "Mauricio Aveiro",
+        "number": 11,
+        "teamId": 13,
+        "pic": "/players/atlanta/11"
+    },
+    {
+        "name": "Diego Aguirre",
+        "number": 20,
+        "teamId": 13,
+        "pic": "/players/atlanta/20"
+    },
+    {
+       
+        "name": "Edgar Martínez",
+        "number": 6,
+        "teamId": 13,
+        "pic": "/players/atlanta/6"
+    },
+    {
+       
+        "name": "Steven Neyer",
+        "number": 3,
+        "teamId": 13,
+        "pic": "/players/atlanta/3"
+    },
+    {
+        
+        "name": "Jonathan Romero",
+        "number": 99,
+        "teamId": 13,
+        "pic": "/players/atlanta/99"
+        
+    },
+    {
+        "name": "Victor Farias",
+        "number": 21,
+        "teamId": 13,
+        "pic": "/players/atlanta/21"
+    },  
+    {
+       
+        "name": "Ivan Insaurralde",
+        "number": 16,
+        "teamId": 13,
+        "pic": "/players/atlanta/16"
+    },
+    {
+        "name": "Ivan Castelhao",
+        "number": 80,
+        "teamId": 13,
+        "pic": "/players/atlanta/80"
+    }
+]
+
+
+[{"name": "Alma Duarte", "number": 1, "teamId": 15},
+{"name": "Ana Ortiz", "number": 2, "teamId": 15},
+{"name": "Luján Torres", "number": 6, "teamId": 15},
+{"name": "Rita Meza", "number": 7, "teamId": 15},
+{"name": "Edelmira Coronel", "number": 8, "teamId": 15},
+{"name": "Daisy Espinola", "number": 9, "teamId": 15},
+{"name": "Gabriela Paredes", "number": 10, "teamId": 15},
+{"name": "Liz Alonso", "number": 11, "teamId": 15},
+{"name": "Johana Miranda", "number": 12, "teamId": 15},
+{"name": "Deisy Greco", "number": 13, "teamId": 15},
+{"name": "Johana Portillo", "number": 15, "teamId": 15},
+{"name": "María Villalba", "number": 16, "teamId": 15},
+{"name": "Guadalupe Torres", "number": 17, "teamId": 15},
+{"name": "Lourdes Ayala", "number": 19, "teamId": 15},
+{"name": "Leticia Rivas", "number": 20, "teamId": 15},
+{"name": "Araceli Talavera", "number": 21, "teamId": 15},
+{"name": "Gladys Martinez", "number": 24, "teamId": 15},
+{"name": "Karina  Gutierres", "number": 25, "teamId": 15},
+{"name": "Elizabeth Cabrera", "number": 27, "teamId": 15},
+{"name": "Erica Penayo", "number": 28, "teamId": 15},
+{"name": "Fabiola Ortigoza", "number": 30, "teamId": 15}]
+
+[{"name": "Carmen Alegre", "number": 11, "teamId": 16},
+{"name": "Rebeca Sánchez", "number": 13, "teamId": 16},
+{"name": "Karina López", "number": 21, "teamId": 16},
+{"name": "Araceli Cabrera", "number": 23, "teamId": 16},
+{"name": "Yamile Caballero", "number": 3, "teamId": 16},
+{"name": "Majo Oviedo", "number": 12, "teamId": 16},
+{"name": "Nati Atienza", "number": 18, "teamId": 16}]
+
+
+[{"name": "Claudia Moreno", "number": 16, "teamId": 17},
+{"name": "Alexandra Figueredo", "number": 10, "teamId": 17},
+{"name": "Fiorella Mendez", "number": 21, "teamId": 17},
+{"name": "Marlene Cabrera", "number": 23, "teamId": 17},
+{"name": "Samira Sanabria", "number": 11, "teamId": 17},
+{"name": "Natali Acosta", "number": 17, "teamId": 17},
+{"name": "Jazmin Gómez", "number": 7, "teamId": 17},
+{"name": "Alma Barrios", "number": 8, "teamId": 17},
+{"name": "Sanie Calderón", "number": 4, "teamId": 17},
+{"name": "Paula Giménez", "number": , "teamId": 17},
+{"name": "Maga Quintana", "number": , "teamId": 17},
+{"name": "Tamara Pereira", "number": , "teamId": 17}]
+
+[{"name": "Gloria Marin", "number": 22, "teamId": 18},
+{"name": "Maite Torales", "number": 18, "teamId": 18},
+{"name": "Angelica Flores", "number": 9, "teamId": 18},
+{"name": "Alejandra Ramírez", "number": 11, "teamId": 18},
+{"name": "Mirta Lugo", "number": 17, "teamId": 18},
+{"name": "Gissel Martínez", "number": 20, "teamId": 18},
+{"name": "Andrea Guillén", "number": 8, "teamId": 18},
+{"name": "Alicia Vera", "number": 7, "teamId": 18},
+{"name": "Agustina Centurión", "number": 4, "teamId": 18},
+{"name": "Analia Ayala", "number": 10, "teamId": 18},
+{"name": "Fatima Aquino", "number": 3, "teamId": 18},
+{"name": "Nara Ayala", "number": 27, "teamId": 18},
+{"name": "Yemili Aguilar", "number": 2, "teamId": 18},
+{"name": "Ruth Aguilar", "number": 21, "teamId": 18},
+{"name": "Danna Alegre", "number": 16, "teamId": 18}]
+
+[{"name": "Ana Medina", "number": 23, "teamId": 19},
+{"name": "Verónica Medina", "number": 8, "teamId": 19},
+{"name": "Camila Arrúa", "number": 21, "teamId": 19},
+{"name": "Nicole Dávalos", "number": 16, "teamId": 19},
+{"name": "Sonia Echagüe", "number": 1, "teamId": 19},
+{"name": "Pabla González", "number": 9, "teamId": 19},
+{"name": "Cielo Villar", "number": 13, "teamId": 19},
+{"name": "Evelyn Figueredo", "number": 10, "teamId": 19},
+{"name": "Fiorella Melgarejo", "number": 7, "teamId": 19},
+{"name": "Deissy Arias", "number": 11, "teamId": 19},
+{"name": "Patricia Duarte", "number": 26, "teamId": 19}]

@@ -4,6 +4,7 @@ const {
   addPlayer,
   addPlayers,
   getPlayersForTeam,
+  deletePlayers,
 } = require("../controllers/player.controller");
 
 module.exports = (app) => {
@@ -16,4 +17,6 @@ module.exports = (app) => {
   app.post("/api/player", addPlayer);
 
   app.post("/api/addplayers", addPlayers);
+
+  app.delete("/api/deleteplayers/:id", deletePlayers);
 };

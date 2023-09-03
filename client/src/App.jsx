@@ -9,6 +9,7 @@ import Coming from "./components/Coming";
 import Teams from "./views/Teams";
 import Ranking from "./views/Ranking";
 import Team from "./views/Team";
+import Test from "./views/Test";
 function App() {
   const [toggle, setToggle] = useState(false);
   const [teams, setTeams] = useState([]);
@@ -41,7 +42,10 @@ function App() {
             path="/"
             element={<Index teams={teams} games={games} />}
           ></Route>
-          <Route path="/admin731649" element={<Admin />}></Route>
+          <Route
+            path="/admin731649"
+            element={<Admin teams={teams} games={games} />}
+          ></Route>
           <Route path="/equipos" element={<Teams teams={teams} />}></Route>
           <Route path="/equipos/:id" element={<Team teams={teams} />}></Route>
           <Route
@@ -49,6 +53,7 @@ function App() {
             element={<Ranking teams={teams} />}
           ></Route>
           <Route path="/comunidad" element={<Coming />}></Route>
+          <Route path="/test" element={<Test />}></Route>
         </Routes>
       </BrowserRouter>
     </>

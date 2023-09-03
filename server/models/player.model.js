@@ -15,6 +15,9 @@ const PlayerSchema = mongoose.Schema(
       type: Number,
       required: [true, "id of team is required"],
     },
+    pic: {
+      type: String,
+    },
   },
   { timestamps: true }
 );

@@ -36,13 +36,32 @@ const addPlayer = (req, res) => {
 const addPlayers = async (req, res) => {
   try {
     for (const playerdata of req.body) {
-      const player = new Player(playerdata);
-      await player.save();
-      console.log(`Jugador "${player.name}" agregado a MongoDB.`);
+      if (playerdata.pic === true) {
+        const player = new Player({
+          ...playerdata,
+          pic:
+            "/players/" + playerdata.teamId + "/" + playerdata.number + ".webp",
+        });
+        await player.save();
+        console.log(`Jugador "${player.name}" agregado a MongoDB.`);
+      } else {
+        const player = new Player({
+          ...playerdata,
+          pic: "",
+        });
+        await player.save();
+        console.log(`Jugador "${player.name}" agregado a MongoDB.`);
+      }
     }
   } catch (error) {
     console.error("Error al agregar jugadores:", error);
   }
+};
+
+const deletePlayers = (req, res) => {
+  Player.deleteMany({ teamId: req.params.id })
+    .then((response) => res.json(response))
+    .catch((err) => res.json(err));
 };
 
 module.exports = {
@@ -51,4 +70,5 @@ module.exports = {
   addPlayer,
   getPlayersForTeam,
   addPlayers,
+  deletePlayers,
 };
