@@ -39,5 +39,3 @@ GameRoutes(app);
 
 // const UserRoutes = require("./routes/user.routes");
 // UserRoutes(app);
-
-Games.deleteMany().then((res) => console.log(res));

@@ -14,6 +14,35 @@ const addGame = (req, res) => {
     .catch((err) => res.json(err));
 };
 
+const addGames = async (req, res) => {
+  for (const gamedata of req.body) {
+    const {
+      gameId,
+      local,
+      visitor,
+      hour,
+      played,
+      date,
+      categorie,
+      localGoals,
+      visitorGoals,
+    } = gamedata;
+    const game = new Games({
+      gameId,
+      local,
+      visitor,
+      hour,
+      played,
+      date,
+      categorie,
+      localGoals,
+      visitorGoals,
+    });
+    await game.save();
+    console.log("Juego agregado con ID" + game.gameId);
+  }
+};
+
 const addResult = async (req, res) => {
   const { body } = req;
   const game = body[2];
@@ -80,6 +109,7 @@ const addResult = async (req, res) => {
 
 module.exports = {
   addGame,
+  addGames,
   getGames,
   addResult,
 };
