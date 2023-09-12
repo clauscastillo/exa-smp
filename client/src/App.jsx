@@ -17,7 +17,7 @@ function App() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8000/api/teams")
+      .get("http://localhost:9000/api/teams")
       .then((res) => {
         setTeams(res.data);
         console.log(res.data);
@@ -25,7 +25,7 @@ function App() {
       .catch((err) => console.log(err));
 
     axios
-      .get("http://localhost:8000/api/games")
+      .get("http://localhost:9000/api/games")
       .then((res) => {
         setGames(res.data);
         console.log(res.data);

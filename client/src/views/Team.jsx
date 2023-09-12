@@ -37,26 +37,25 @@ const Team = ({ teams }) => {
       <hr />
       <div className="players">
         <h3 className="title-players">Jugadores</h3>
-        {players
-          .sort((a, b) => a.number - b.number)
-          .map((player) => {
-            return (
-              <>
-                <div key={player._id} className="player-list">
+        <div className="players-container">
+          {players
+            .sort((a, b) => a.number - b.number)
+            .map((player) => {
+              return (
+                <div key={player._id} className="player-item">
                   <img
                     src={player.pic ? player.pic : "/players/avatar.png"}
                     alt=""
                     className="player-photo"
                   />
                   <div className="player-info">
-                    <p>{player.number}</p>
+                    <p>{player.number} - </p>
                     <p>{player.name}</p>
                   </div>
                 </div>
-                <hr className="div-players" />
-              </>
-            );
-          })}
+              );
+            })}
+        </div>
       </div>
     </div>
   );

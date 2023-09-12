@@ -340,7 +340,7 @@ td img {
 }
 
 .players {
-  padding: 20px;
+  padding: 10px;
 }
 
 .list {
@@ -354,10 +354,11 @@ td img {
   margin-bottom: 20px;
 }
 
-.player-list {
+.player-item {
   display: flex;
   flex-direction: column;
-  width: 200px;
+  width: 190px;
+  height: auto;
   border-radius: 10px;
 }
 
@@ -374,8 +375,8 @@ td img {
 }
 
 .player-photo {
-  width: 100%;
-  padding: 10px;
+  height: 100%;
+  width: auto;
   background-image: url("/players/13/fondo.png");
   background-size: cover; 
   background-repeat: no-repeat; 
@@ -388,7 +389,6 @@ td img {
   background-color: #231F20;
   color: white;
   padding: 10px;
-  width: 100%;
 }
 
 .player-info p {
@@ -458,4 +458,11 @@ td img {
   flex-direction: column;
   max-width: 800px;
   background-color: #dcdcdc;
+}
+
+.players-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual ancho */
+  gap: 10px; /* Espacio entre las tarjetas */ 
 }
