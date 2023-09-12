@@ -18,7 +18,7 @@ $ git clone https://github.com/your_github_username/MERN-deployment.git
 $ sudo rm -rf /var/www/html
 $ sudo mv dist /var/www/html
 $ sudo service nginx restart
-$ sudo grep -rl localhost /var/www/html | xargs sed -i 's/http:\/\/localhost:8000//g'
+$ sudo grep -rl localhost /var/www/html | xargs sed -i 's/http:\/\/localhost:9000//g'
 $ sudo rm /etc/nginx/sites-available/default
 $ sudo vim /etc/nginx/sites-available/default
 
