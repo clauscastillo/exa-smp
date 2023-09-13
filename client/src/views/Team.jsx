@@ -45,7 +45,7 @@ const Team = ({ teams }) => {
                 <div key={player._id} className="player-item">
                   <img
                     src={player.pic ? player.pic : "/players/avatar.png"}
-                    alt=""
+                    alt={player.name}
                     className="player-photo"
                   />
                 </div>
