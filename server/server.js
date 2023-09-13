@@ -45,5 +45,3 @@ GameRoutes(app);
 
 // const UserRoutes = require("./routes/user.routes");
 // UserRoutes(app);
-
-Player.deleteMany({ number: 30 }).then(console.log("eliminados"));
