@@ -11,13 +11,19 @@ app.listen(port, () => {
 });
 
 // Configuracion para peticiones cruzadas y lectura de POST
-app.use(
-  cors({
-    origin: "http://localhost:5173",
-    // origin: "https://exasmp.site",
-    credentials: true,
-  })
-);
+const allowedOrigins = ["http://localhost:5173", "https://exasmp4.site"];
+
+const corsOptions = {
+  origin: function (origin, callback) {
+    if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+};
+
+app.use(cors(corsOptions));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

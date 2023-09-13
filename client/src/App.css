@@ -374,13 +374,7 @@ td img {
   width: 100%;
 }
 
-.player-photo {
-  height: 100%;
-  width: auto;
-  background-image: url("/players/13/fondo.png");
-  background-size: cover; 
-  background-repeat: no-repeat; 
-}
+
 
 .player-info {
   text-align: center;

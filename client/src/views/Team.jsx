@@ -48,10 +48,6 @@ const Team = ({ teams }) => {
                     alt=""
                     className="player-photo"
                   />
-                  <div className="player-info">
-                    <p>{player.number} - </p>
-                    <p>{player.name}</p>
-                  </div>
                 </div>
               );
             })}
