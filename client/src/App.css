@@ -31,6 +31,7 @@ img {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 hr {
@@ -43,8 +44,10 @@ header {
   height: 75px;
   display: flex;
   align-items: center;
+  padding: 10px;
   justify-content: space-between;
-  background-color:#37003C ;
+  background: rgb(55,0,60);
+  background: linear-gradient(90deg, rgba(55,0,60,1) 0%, rgba(28,106,158,1) 70%, rgba(0,212,255,1) 100%);
   color: white;
 
 }
@@ -71,16 +74,10 @@ select {
 
 
 
-.bg-logo {
-  width: 30%;
-  background-color: white;
-  border-radius: 0 100px 100px 0;
-  display: flex;
-  justify-content: center;
-}
 
 .logo {
   height: 75px;
+  padding: 15px;
 }
 
 .menu-icon {
@@ -93,7 +90,6 @@ select {
   border-radius: 5px;
   padding: 15px;
   color: white;
-  background: linear-gradient(20deg, #2AC2FF, #7e59ff);
 }
 
 .menu {
@@ -103,7 +99,7 @@ select {
   padding: 30px;
   position: absolute;
   right: 0;
-  top: 75px;
+  top: 95px;
   height: 90%;
   width: 75%;
   border-left: #b3b3b3 solid thin;
@@ -357,7 +353,7 @@ td img {
 .player-item {
   display: flex;
   flex-direction: column;
-  width: 190px;
+  width: 170px;
   height: auto;
   border-radius: 10px;
 }
@@ -373,7 +369,6 @@ td img {
 .div-players {
   width: 100%;
 }
-
 
 
 .player-info {

@@ -15,7 +15,10 @@ const Header = ({ setToggle, toggle }) => {
         <Link to={"/"} className="bg-logo">
           <img className="logo" src="/logo.png" alt="" />
         </Link>
-        <h1>Exa SMP</h1>
+        <Link to={"/"}>
+          <h1>Exa SMP</h1>
+        </Link>
+
         {toggle ? (
           <MdClose
             className="close-menu-icon"
