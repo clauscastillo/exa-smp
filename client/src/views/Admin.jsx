@@ -36,7 +36,7 @@ const Admin = ({ teams, games }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:9000/api/game", {
+      .post("http://localhost:8000/api/game", {
         ...form,
         gameId:
           form.local.toString() +
