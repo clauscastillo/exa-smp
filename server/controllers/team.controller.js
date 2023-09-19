@@ -41,12 +41,19 @@ const addTeams = (req, res) => {
 
 const editStats = (req, res) => {
   const { body } = req;
-  Team.findOneAndUpdate(
-    { teamId: body.teamId },
-    { points: body.points, diff: body.diff, played: body.played }
-  )
-    .then((response) => res.json(response))
-    .catch((err) => res.json(err));
+  console.log(body);
+  for (const team of body) {
+    Team.findOneAndUpdate(
+      { teamId: team.teamId },
+      { points: team.points, diff: team.diff, played: team.played }
+    )
+      .then(
+        console.log(
+          "Equipo con ID" + team.teamId + " Actualizado correctamente"
+        )
+      )
+      .catch((err) => res.json(err));
+  }
 };
 
 module.exports = {

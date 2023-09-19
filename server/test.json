@@ -1,0 +1,21 @@
+[
+  { "teamId": 1, "points": 7, "diff": 9, "played": 4 },
+  { "teamId": 2, "points": 4, "diff": 7, "played": 3 },
+  { "teamId": 3, "points": 6, "diff": 7, "played": 3 },
+  { "teamId": 4, "points": 4, "diff": 1, "played": 3 },
+  { "teamId": 5, "points": 0, "diff": -4, "played": 3 },
+  { "teamId": 6, "points": 4, "diff": -1, "played": 4 },
+  { "teamId": 7, "points": 0, "diff": -14, "played": 3 },
+  { "teamId": 8, "points": 6, "diff": 4, "played": 4 },
+  { "teamId": 9, "points": 6, "diff": 6, "played": 4 },
+  { "teamId": 10, "points": 2, "diff": -4, "played": 4 },
+  { "teamId": 11, "points": 2, "diff": -2, "played": 4 },
+  { "teamId": 12, "points": 2, "diff": -3, "played": 3 },
+  { "teamId": 13, "points": 3, "diff": -6, "played": 4 },
+  { "teamId": 14, "points": 4, "diff": 2, "played": 4 },
+  { "teamId": 15, "points": 8, "diff": 12, "played": 4 },
+  { "teamId": 16, "points": 6, "diff": 16, "played": 3 },
+  { "teamId": 17, "points": 2, "diff": -6, "played": 3 },
+  { "teamId": 18, "points": 1, "diff": -7, "played": 4 },
+  { "teamId": 19, "points": 1, "diff": -17, "played": 4 }
+]

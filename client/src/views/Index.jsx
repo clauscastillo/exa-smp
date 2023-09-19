@@ -26,9 +26,12 @@ const Index = ({ teams, games }) => {
         </section>
 
         <section className={alternate ? "games select-show" : "select-hide"}>
+          <h1>Aún no están disponibles los partidos de la fecha 5</h1>
+        </section>
+        <section className={alternate ? "select-hide" : "games select-show"}>
           <article className="fechas">
             <div className="fechas-header">
-              <h2 className="fecha">Clausura - Fecha 4</h2>
+              <h2 className="fecha">Clausura - Fecha 3</h2>
             </div>
             <div className="section-masc">
               <p className="masculino">Masculino</p>
@@ -56,7 +59,9 @@ const Index = ({ teams, games }) => {
                             className="img-left"
                           />
                         </p>
-                        <span>{game.hour}</span>
+                        <span>
+                          {game.localGoals}-{game.visitorGoals}
+                        </span>
                         <p className="text-right">
                           <img
                             src={
@@ -100,7 +105,9 @@ const Index = ({ teams, games }) => {
                             className="img-left"
                           />
                         </p>
-                        <span>{game.hour}</span>
+                        <span>
+                          {game.localGoals}-{game.visitorGoals}
+                        </span>
                         <p className="text-right">
                           <img
                             src={
@@ -120,8 +127,6 @@ const Index = ({ teams, games }) => {
                   })}
             </div>
           </article>
-        </section>
-        <section className={alternate ? "select-hide" : "games select-show"}>
           <article className="fechas">
             <div className="fechas-header">
               <h2 className="fecha">Clausura - Fecha 3</h2>

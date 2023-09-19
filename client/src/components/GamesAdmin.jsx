@@ -15,7 +15,7 @@ const GamesAdmin = ({ teams }) => {
       <section className="games">
         {teams &&
           games
-            .filter((game) => game.date === 3)
+            .filter((game) => game.date === 2)
             .map((game) => {
               return (
                 <div key={game._id} className="add-result">
