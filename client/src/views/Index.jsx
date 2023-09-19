@@ -31,7 +31,7 @@ const Index = ({ teams, games }) => {
         <section className={alternate ? "select-hide" : "games select-show"}>
           <article className="fechas">
             <div className="fechas-header">
-              <h2 className="fecha">Clausura - Fecha 3</h2>
+              <h2 className="fecha">Clausura - Fecha 4</h2>
             </div>
             <div className="section-masc">
               <p className="masculino">Masculino</p>
