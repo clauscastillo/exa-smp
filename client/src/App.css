@@ -353,7 +353,7 @@ td img {
 .player-item {
   display: flex;
   flex-direction: column;
-  width: 170px;
+  width: 100%;
   height: auto;
   border-radius: 10px;
 }
