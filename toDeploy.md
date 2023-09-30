@@ -6,9 +6,9 @@ $ nodejs -v
 
 # this should print out version 8.10.0
 
-$ curl -sL https://deb.nodesource.com/setup_18.x -o nodesource_setup.sh
-$ sudo bash nodesource_setup.sh
-$ sudo apt install nodejs
+$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+$ nvm install --lts
+$ nvm alias default <versión>
 $ node -v
 
 # this should now print out version 10.19.0

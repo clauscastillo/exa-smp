@@ -397,6 +397,11 @@ td img {
   display: none;
 }
 
+.select-show {
+  width: 80%;
+  margin: 0 auto;
+}
+
 
 
 .center {
@@ -423,6 +428,8 @@ td img {
   border: 1px solid rgb(217, 217, 217);
   border-radius: 15px;
   margin-bottom: 10px;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .fechas > p {
